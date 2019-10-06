@@ -1,4 +1,5 @@
-import utilities from '../helpers/utilities';
+import utilities from '../../helpers/utilities';
+import './fight.scss';
 
 const createFightButtons = () => {
   let domString = '';
@@ -7,8 +8,10 @@ const createFightButtons = () => {
       <button id='runaway' class='button'>Runaway!</button>
       <button id='hit' class='button'>Hit</button>
     </div>
-    <div id="progress-bar">
-      <progress value='1' label="fullness"></progress>
+    <div id="progress-container">
+      <div id="myProgress">
+        <div id="myBar" style="width: 50%"></div>
+      </div>
     </div>
   `;
   utilities.printToDom(domString, 'fight');
