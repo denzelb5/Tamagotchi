@@ -13,18 +13,16 @@
 
   #strength-progress {
     width: $bar-width;
-    background-color: rgb(190, 190, 201);
+    background-color: $bar-background;
     border-radius: $border-radius;
-    box-shadow: 5px 5px 10px 0px;
+    box-shadow: $bar-box-shadow;
     
 
   
     #strength-bar {
-      height: 15px;
-      background-color: rgb(74, 136, 207);
+      height: $bar-height;
+      background-color: $bar-color;
       text-align: center;
-      line-height: 30px;
-      color: white;
       border-radius: $border-radius;
     }
   }
