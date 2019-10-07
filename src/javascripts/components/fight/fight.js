@@ -30,7 +30,7 @@ const createFightButtons = () => {
     </div>
     <div id="strength-progress-container">
       <div id="strength-progress">
-        <div id="strength-bar" style="width: ${strength}%"></div>
+        <div id="strength-bar" class="quad-bar" style="width: ${strength}%"></div>
       </div>
     </div>
   `;

@@ -32,7 +32,7 @@ const createEatButtons = () => {
     </div>
     <div id="progress-container">
       <div id="myProgress">
-        <div id="myBar" style="width: ${full}%"></div>
+        <div id="myBar" class="quad-bar" style="width: ${full}%"></div>
       </div>
     </div>
     

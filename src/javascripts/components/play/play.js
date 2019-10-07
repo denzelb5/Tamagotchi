@@ -31,7 +31,7 @@ const createPlayButtons = () => {
   </div>
   <div id="fun-progress-container">
       <div id="fun-progress">
-        <div id="fun-bar" style="width: ${fun}%"></div>
+        <div id="fun-bar" class="quad-bar" style="width: ${fun}%"></div>
       </div>
     </div>
   `;
