@@ -32,7 +32,7 @@ const createSleepButtons = () => {
   </div>
   <div id="sleep-progress-container">
       <div id="sleep-progress">
-        <div id="sleep-bar" style="width: ${energy}%"></div>
+        <div id="sleep-bar" class="quad-bar" style="width: ${energy}%"></div>
       </div>
     </div>
   `;
