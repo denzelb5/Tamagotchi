@@ -6,3 +6,25 @@
   height: $quad-height;
 }
 
+#progress-container {
+  display: flex;
+  justify-content: center;
+
+
+  #myProgress {
+    width: $bar-width;
+        background-color: $bar-background;
+        border-radius: $border-radius;
+        box-shadow: $bar-box-shadow;
+      
+    
+
+  
+    #myBar {
+      height: $bar-height;
+        background-color: $bar-color;
+        text-align: center;
+        border-radius: $border-radius;
+      }
+  }
+}
