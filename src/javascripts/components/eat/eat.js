@@ -23,6 +23,8 @@ const addingSnack = () => {
   document.getElementById('myBar').setAttribute('style', `width: ${full}%`);
 };
 
+const getFull = () => full;
+
 const createEatButtons = () => {
   let domString = '';
   domString += `
@@ -42,4 +44,4 @@ const createEatButtons = () => {
   document.getElementById('snack').addEventListener('click', addingSnack);
 };
 
-export default { createEatButtons };
+export default { createEatButtons, getFull };

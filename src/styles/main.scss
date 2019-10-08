@@ -3,13 +3,13 @@
 
 
 body {
-    background-color: blue;
+    background-color: rgb(63, 8, 88);
   }
 
-  #app {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
+   #app {
+    display: inline-block;
+  //   flex-wrap: wrap;
+  //   justify-content: center;
   }
 
   .button {
@@ -28,7 +28,10 @@ body {
     justify-content: space-between;
   }
 
-   
+  
+   .quad {
+     display: inline-block;
+   }
   
 
   

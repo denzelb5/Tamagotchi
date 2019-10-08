@@ -22,6 +22,8 @@ const deepSleep = () => {
   document.getElementById('sleep-bar').setAttribute('style', `width: ${energy}%`);
 };
 
+const getEnergy = () => energy;
+
 
 const createSleepButtons = () => {
   let domString = '';
@@ -41,4 +43,4 @@ const createSleepButtons = () => {
   document.getElementById('deep-sleep').addEventListener('click', deepSleep);
 };
 
-export default { createSleepButtons };
+export default { createSleepButtons, getEnergy };
