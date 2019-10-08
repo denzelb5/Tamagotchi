@@ -1,5 +1,5 @@
 import utilities from '../javascripts/helpers/utilities';
-import sloth from './sloth-drawing.jpg';
+import sloth from './sloth-drawing.png';
 
 import './image.scss';
 
