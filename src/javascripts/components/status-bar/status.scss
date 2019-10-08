@@ -1,3 +1,25 @@
-#status-progress {
-  width: 200px;
+@import '../../../styles/variables';
+
+
+
+#status-progress-container {
+  display: flex;
+  justify-content: center;
+  margin-top: 2em;
+
+  #status-progress {
+    width: 400px;
+    background-color: $bar-background;
+    border-radius: $border-radius;
+    box-shadow: $bar-box-shadow;
+      
+    #status-bar {
+      height: 30px;
+      background-color: $bar-color;
+      text-align: center;
+      border-radius: $border-radius;
+      color: white;
+      text-align: center;
+    }
+  }
 }

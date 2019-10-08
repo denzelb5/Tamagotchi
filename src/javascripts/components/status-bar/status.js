@@ -1,8 +1,10 @@
+import $ from 'jquery';
 import utilities from '../../helpers/utilities';
 import fun from '../play/play';
 import full from '../eat/eat';
 import strength from '../fight/fight';
 import sleep from '../sleep/sleep';
+
 
 import './status.scss';
 
@@ -28,5 +30,7 @@ const printStatusBar = () => {
   utilities.printToDom(domString, 'progress');
   utilities.printToDom(getAverage(), 'status-bar');
 };
+
+$('button').click(getAverage());
 
 export default { printStatusBar };
