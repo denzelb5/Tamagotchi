@@ -29,8 +29,9 @@ const printStatusBar = () => {
 `;
   utilities.printToDom(domString, 'progress');
   utilities.printToDom(getAverage(), 'status-bar');
+  document.getElementsByTagName('button').addEventListener('click', getAverage);
 };
 
-$('button').click(getAverage());
+$('button').on('click', getAverage());
 
 export default { printStatusBar };

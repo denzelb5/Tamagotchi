@@ -28,15 +28,16 @@ const getEnergy = () => energy;
 const createSleepButtons = () => {
   let domString = '';
   domString += `
-  <div class="button-container">
-    <button id='nap' class='button'>Nap</button>
-    <button id='deep-sleep' class='button'>Deep-sleep</button>
-  </div>
   <div id="sleep-progress-container">
       <div id="sleep-progress">
         <div id="sleep-bar" class="quad-bar" style="width: ${energy}%"></div>
       </div>
     </div>
+  <div id="sleep-button-container">
+    <button id='nap' class='sleep-button'>Nap</button>
+    <button id='deep-sleep' class='sleep-button'>Deep-sleep</button>
+  </div>
+  
   `;
   utilities.printToDom(domString, 'sleep');
   document.getElementById('nap').addEventListener('click', takeNap);
