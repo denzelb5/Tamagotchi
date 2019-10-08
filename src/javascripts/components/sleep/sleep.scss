@@ -8,10 +8,26 @@
     float: right;
 }
 
+#sleep-button-container {
+  display: flex;
+  justify-content: space-between;
+}
+
+.sleep-button {
+  width: $button-width;
+  height: $button-height;
+  border-radius: $border-radius;
+  margin: 1em 1em 1em 1em;
+  background-color: rgb(22, 67, 95);
+  color: white;
+  border: none;
+  box-shadow: $box-shadow;
+}
+
 #sleep-progress-container {
     display: flex;
     justify-content: center;
-  
+    margin-top: 300px;
   
     #sleep-progress {
       width: $bar-width;

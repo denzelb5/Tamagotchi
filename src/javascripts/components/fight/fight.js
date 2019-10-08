@@ -26,15 +26,16 @@ const getStrength = () => strength;
 const createFightButtons = () => {
   let domString = '';
   domString += `
-    <div class='button-container'>
-      <button id='runaway' class='button'>Runaway!</button>
-      <button id='hit' class='button'>Hit</button>
-    </div>
-    <div id="strength-progress-container">
+  <div id="strength-progress-container">
       <div id="strength-progress">
         <div id="strength-bar" class="quad-bar" style="width: ${strength}%"></div>
       </div>
     </div>
+    <div id='fight-button-container'>
+      <button id='runaway' class='fight-button'>Runaway!</button>
+      <button id='hit' class='fight-button'>Hit</button>
+    </div>
+    
   `;
   utilities.printToDom(domString, 'fight');
   document.getElementById('hit').addEventListener('click', hitting);
