@@ -22,6 +22,8 @@ const watchTV = () => {
   document.getElementById('fun-bar').setAttribute('style', `width: ${fun}%`);
 };
 
+const getFun = () => fun;
+
 const createPlayButtons = () => {
   let domString = '';
   domString += `
@@ -40,4 +42,4 @@ const createPlayButtons = () => {
   document.getElementById('tv').addEventListener('click', watchTV);
 };
 
-export default { createPlayButtons };
+export default { createPlayButtons, getFun };

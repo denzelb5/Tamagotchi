@@ -21,6 +21,8 @@ const runaway = () => {
   document.getElementById('strength-bar').setAttribute('style', `width: ${strength}%`);
 };
 
+const getStrength = () => strength;
+
 const createFightButtons = () => {
   let domString = '';
   domString += `
@@ -39,4 +41,4 @@ const createFightButtons = () => {
   document.getElementById('runaway').addEventListener('click', runaway);
 };
 
-export default { createFightButtons };
+export default { createFightButtons, getStrength };
