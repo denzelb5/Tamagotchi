@@ -1,6 +1,7 @@
 import utilities from '../../helpers/utilities';
 import './fight.scss';
 
+
 let strength = 100;
 
 const hitting = () => {

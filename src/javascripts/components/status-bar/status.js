@@ -1,4 +1,4 @@
-import $ from 'jquery';
+// import $ from 'jquery';
 import utilities from '../../helpers/utilities';
 import fun from '../play/play';
 import full from '../eat/eat';
@@ -14,6 +14,7 @@ const getAverage = () => {
   const strengthOutput = strength.getStrength();
   const energyOutput = sleep.getEnergy();
   const average = (funOutput + eatOutput + strengthOutput + energyOutput) / 4;
+  console.log(average);
   return average;
 };
 
@@ -29,9 +30,7 @@ const printStatusBar = () => {
 `;
   utilities.printToDom(domString, 'progress');
   utilities.printToDom(getAverage(), 'status-bar');
-  document.getElementsByTagName('button').addEventListener('click', getAverage);
 };
 
-$('button').on('click', getAverage());
 
-export default { printStatusBar };
+export default { printStatusBar, getAverage };
