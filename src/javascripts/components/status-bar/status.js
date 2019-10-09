@@ -29,8 +29,9 @@ const printStatusBar = () => {
 </div>
 `;
   utilities.printToDom(domString, 'progress');
+  setInterval(printStatusBar, 10);
   utilities.printToDom(getAverage(), 'status-bar');
 };
 
 
-export default { printStatusBar, getAverage };
+export default { printStatusBar };
