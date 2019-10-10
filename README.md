@@ -11,9 +11,9 @@ addition, there is a progress bar at the top of the page that represents the ove
 well-being of your character.
 
 ## Screenshots
-![Tamagotchi-1](./screenshots/Tamagotchi-screenshot1.png)
+![Tamagotchi-1](https://github.com/denzelb5/Tamagotchi/blob/master/screenshots/Tamagotchi-screenshot1.png?raw=true)
 
-![Tamagotchi-2](./screenshots/Tamagotchi-screenshot2.png)
+![Tamagotchi-2](https://github.com/denzelb5/Tamagotchi/blob/master/screenshots/Tamagotchi-screenshot2.png?raw=true)
 
 ## How to run
 * Clone down this project
